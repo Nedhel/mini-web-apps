@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*General style*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/*Style for Navbar*/
+nav {
+    display: flex;
+}
+
+nav div {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+nav button {
+    width: 60%;
+    padding: 8px 0;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: 700;
+    border: none;
+}
+
+nav .menu::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background-color: purple;
+    transition: width .5s;
+}
+
+nav .menu:hover::after {
+    width: 100%;
+}
+
+/*Style for main seccion on homepage*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+.apps {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.apps img {
+    width: 200px;
+}
+
+/*Style for footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media img {
+    width: 30px;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+.links div {
+    border-left: 4px solid black;
+    padding: 0 5px;
+}
