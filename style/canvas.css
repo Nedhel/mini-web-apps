@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.subnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 3px 0;
+    gap: 10px;
+}
+
+.icon {
+    width: 30px;
+}
+
+.submain {
+    display: flex;
+}
+
+#canvas {
+    border: 1px solid black;
+}
+
+p {
+    margin: 2px 0;
+    text-align: center;
+}
+
+.tools-right {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+    border: 1px solid black;
+}
+
+.tools-right img {
+    width: 20px;
+}
+
+.tools-right div {
+    display: flex;
+    gap: 5px;
+}
+
+.size1 {
+    padding: 8px;
+}
+
+.size2 {
+    padding: 6px;
+}
+
+.size3 {
+    padding: 4px;
+}
+
+.size4 {
+    padding: 0px;
+}
+
+.color {
+    width: 35px;
+    height: 35px;
+}
+
+.black {
+    background-color: black;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.violet {
+    background-color: violet;
+}
+
+.green {
+    background-color: green;
+}
+
+.greenyellow {
+    background-color: greenyellow;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.pink {
+    background-color: pink;
+}
+
+#selec-color {
+    width: 100%;
+}
+
+.tool-selected {
+    background-image: radial-gradient(white, rgb(113, 221, 233));
+}
