@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hangman</title>
+        <link rel="stylesheet" href="../style/hangman.css" />
+        <link rel="stylesheet" href="../style/general.css" />
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <a href="../index.html"><button>MARIZA</button></a>
+            </div>
+            <div class="menu"><button>Calculator</button></div>
+            <div class="menu">
+                <a href="./pages/hangman.html"><button>Hangman Game</button></div></a>
+            <div class="menu">
+                <a href="./drawing.html"><button>Drawing App</button></a>
+            </div>
+        </nav>
+        <section class="hangman">
+            <div class="subnav">
+                <div>Hangman</div>
+            </div>
+            <section class="top-part">
+                <!-- <h1>
+                    Hangman : Song Name
+                </h1> -->
+                <section id="answer-section">
+                </section>
+                <section class="hint-section">
+                    <button id="hint">Hint</button>
+                    <div id="hint-text" hidden></div>
+                </section>
+            </section>
+
+            <section class="middle-part">
+                <section class="life-count">
+                    <p>
+                        Lives left:
+                    </p>
+                    <div id="lives-left"></div>
+                </section>
+                <section class="alphabets">
+                    <p>
+                        Click alphabets below to guess the word.
+                    </p>
+                    <div id="letters">
+                    </div>
+                </section>
+            </section>
+            <section class="bottom-part">
+                <button id="next-btn">Next</button>
+            </section>
+        </section>
+        <footer>
+            <div class="social-media">
+                <img src="../img/instagram.png" alt="instagram icon" />
+                <img src="../img/pinterest.png" alt="pinterest icon" />
+                <img src="../img/whatsapp.png" alt="whatsapp icon" />
+                <img src="../img/youtube.png" alt="youtube icon" />
+            </div>
+            <div class="links">
+                <div>Advertise</div>
+                <div>About</div>
+                <div>Contact</div>
+            </div>
+            <div>&copy; Copyright 2023</div>
+        </footer>
+        <script src="../js/hangman.js"></script>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+.hangman {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+
+}
+
+.top-part,
+.bottom-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3vh;
+}
+
+.subnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 3px 0;
+    gap: 10px;
+}
+
+.hint-section {
+    font-size: 30px;
+    height: 8vh;
+
+    button {
+        font-size: 30px;
+    }
+}
+
+#letters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+
+    button {
+        width: 10%;
+        background-color: skyblue;
+        border-radius: 5px;
+    }
+
+    .clicked {
+        background-color: grey;
+    }
+}
+
+#answer-section {
+    height: 10vh;
+    font-size: 8vh;
+    letter-spacing: 3vw;
+}
+
+.middle-part {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3vw;
+}
+
+.life-count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    font-size: 20px;
+}
+
+#lives-left {
+    text-align: center;
+    font-size: 40px;
+}
+
+.alphabets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+
+    p {
+        font-size: 20px;
+    }
+}
+
+#next-btn {
+    font-size: 30px;
+}
