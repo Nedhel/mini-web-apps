@@ -1,69 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculator2</title>
-    <link rel="stylesheet" href="../style/calculator.css">
-</head>
-<body>
-    <nav>
-        <div class="logo">
-            <a href="../index.html"><button>MARIZA</button></a>
-        </div>
-        <div class="menu">
-            <a href="../pages/calculator.html"><button>Calculator</button></a>
-        </div>
-        <div class="menu"><button>Hangman Game</button></div>
-        <div class="menu">
-            <a href="../pages/drawing.html"><button>Drawing App</button></a>
-        </div>
-    </nav>
-    <section class="main">
-        <h1>CALCULATOR</h1>
-        <div class="c-box">
-            <div class="fmr-box">
-                <input type="text" id="first-number" readonly>
-                <input type="text" id="cal-symbol" readonly>
-                <input type="text" id="second-number" readonly>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>calculator2</title>
+        <link rel="stylesheet" href="../style/calculator.css" />
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <a href="../index.html"><button>MARIZA</button></a>
             </div>
-            
-            <div class="c-items">
-                <input type="text" id="result" readonly>
-                <button value="7" id="btn7" onclick="addToDisplay(7)">7</button>
-                <button value="8" id="btn8" onclick="addToDisplay(8)">8</button>
-                <button value="9" id="btn9" onclick="addToDisplay(9)">9</button>
-                <button value="/" id="btndivide" onclick="addSymbolToDisplay('/')">÷</button>
-                <button value="4" id="btn4" onclick="addToDisplay(4)">4</button>
-                <button value="5" id="btn5" onclick="addToDisplay(5)">5</button>
-                <button value="6" id="btn6" onclick="addToDisplay(6)">6</button>
-                <button value="×" id="btnmultiply" onclick="addSymbolToDisplay('*')">×</button>
-                <button value="1" id="btn1" onclick="addToDisplay(1)">1</button>
-                <button value="2" id="btn2" onclick="addToDisplay(2)">2</button>
-                <button value="3" id="btn3" onclick="addToDisplay(3)">3</button>
-                <button value="-" id="btnminus" onclick="addSymbolToDisplay('-')">-</button>
-                <button value="0" id="btn0" onclick="addToDisplay(0)">0</button>
-                <button value="C" id="btnc" onclick="clearDisplay()">C</button>
-                <button value="=" id="btnequal">=</button>
-                <button value="+" id="btnplus" onclick="addSymbolToDisplay('+')">+</button>
+            <div class="menu">
+                <a href="./calculator.html"><button>Calculator</button></a>
             </div>
-        </div>
-    </section>
-    <footer>
-        <div class="social-media">
-            <img src="../img/instagram.png" alt="instagram icon" />
-            <img src="../img/pinterest.png" alt="pinterest icon" />
-            <img src="../img/whatsapp.png" alt="whatsapp icon" />
-            <img src="../img/youtube.png" alt="youtube icon" />
-        </div>
-        <div class="links">
-            <div>Advertise</div>
-            <div>About</div>
-            <div>Contact</div>
-        </div>
-        <div>&copy; Copyright 2023</div>
-    </footer>
+            <div class="menu">
+                <a href="./hangman.html"><button>Hangman Game</button></a>
+            </div>
+            <div class="menu">
+                <a href="./drawing.html"><button>Drawing App</button></a>
+            </div>
+        </nav>
+        <section class="main">
+            <h1>CALCULATOR</h1>
+            <div class="c-box">
+                <div class="fmr-box">
+                    <input type="text" id="first-number" readonly />
+                    <input type="text" id="cal-symbol" readonly />
+                    <input type="text" id="second-number" readonly />
+                </div>
 
-    <script src="../js/calculator.js"></script>
-</body>
+                <div class="c-items">
+                    <input type="text" id="result" readonly />
+                    <button value="7" id="btn7" onclick="addToDisplay(7)">
+                        7
+                    </button>
+                    <button value="8" id="btn8" onclick="addToDisplay(8)">
+                        8
+                    </button>
+                    <button value="9" id="btn9" onclick="addToDisplay(9)">
+                        9
+                    </button>
+                    <button
+                        value="/"
+                        id="btndivide"
+                        onclick="addSymbolToDisplay('/')"
+                    >
+                        ÷
+                    </button>
+                    <button value="4" id="btn4" onclick="addToDisplay(4)">
+                        4
+                    </button>
+                    <button value="5" id="btn5" onclick="addToDisplay(5)">
+                        5
+                    </button>
+                    <button value="6" id="btn6" onclick="addToDisplay(6)">
+                        6
+                    </button>
+                    <button
+                        value="×"
+                        id="btnmultiply"
+                        onclick="addSymbolToDisplay('*')"
+                    >
+                        ×
+                    </button>
+                    <button value="1" id="btn1" onclick="addToDisplay(1)">
+                        1
+                    </button>
+                    <button value="2" id="btn2" onclick="addToDisplay(2)">
+                        2
+                    </button>
+                    <button value="3" id="btn3" onclick="addToDisplay(3)">
+                        3
+                    </button>
+                    <button
+                        value="-"
+                        id="btnminus"
+                        onclick="addSymbolToDisplay('-')"
+                    >
+                        -
+                    </button>
+                    <button value="0" id="btn0" onclick="addToDisplay(0)">
+                        0
+                    </button>
+                    <button value="C" id="btnc" onclick="clearDisplay()">
+                        C
+                    </button>
+                    <button value="=" id="btnequal">=</button>
+                    <button
+                        value="+"
+                        id="btnplus"
+                        onclick="addSymbolToDisplay('+')"
+                    >
+                        +
+                    </button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="social-media">
+                <img src="../img/instagram.png" alt="instagram icon" />
+                <img src="../img/pinterest.png" alt="pinterest icon" />
+                <img src="../img/whatsapp.png" alt="whatsapp icon" />
+                <img src="../img/youtube.png" alt="youtube icon" />
+            </div>
+            <div class="links">
+                <div>Advertise</div>
+                <div>About</div>
+                <div>Contact</div>
+            </div>
+            <div>&copy; Copyright 2023</div>
+        </footer>
+
+        <script src="../js/calculator.js"></script>
+    </body>
 </html>
